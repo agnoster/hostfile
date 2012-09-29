@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["i@agnoster.net"]
   gem.description   = %q{No-fuss hash-style hostfile manipulation}
   gem.summary       = %q{Hostfile lets you access your systems hosts file like a standard Ruby hash. It's built for simplicity, familiarity, and (as far as possible) atomicity.}
-  gem.homepage      = "https://github.com/agnoster/hostfile.rb"
+  gem.homepage      = "https://github.com/agnoster/hostfile"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }

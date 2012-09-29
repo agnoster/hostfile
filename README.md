@@ -1,6 +1,8 @@
-# Hostfile.rb
+# Hostfile
 
-Simple hostfile manipulation for Ruby
+> STATE: Unusable
+
+No-fuss hash-style hostfile manipulation for Ruby
 
     Hostfile.default["customhost.localhost"] = "127.0.0.1"
 
