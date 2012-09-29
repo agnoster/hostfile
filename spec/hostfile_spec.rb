@@ -101,7 +101,7 @@ describe Hostfile do
   describe "#system_path" do
     context "on windows" do
       before :each do
-        ENV['SystemRoot'] = 'C:\WINDOWS'
+        ENV.stub(:[]).with("SystemRoot").and_return 'C:\WINDOWS'
         Hostfile.stub(:windows?).and_return true
       end
 
