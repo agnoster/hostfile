@@ -10,11 +10,16 @@ module Hostfile
     windows? ? (ENV['SystemRoot'] + '\system32\drivers\etc\hosts') : '/etc/hosts'
   end
 
-  def self.default
-    Hostfile.new
+  def self.default(&block)
+    self.open(&block)
   end
 
-  def self.new(*args)
-    Hostfile.new(*args)
+  def self.open(*args, &block)
+    hosts = Hostfile.new(*args)
+    if block
+      yield hosts
+    else
+      hosts
+    end
   end
 end
