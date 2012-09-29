@@ -1,5 +1,5 @@
 require "hostfile/version"
-require "hostfile/hostfile"
+require "hostfile/hosts"
 
 module Hostfile
   def self.windows?
@@ -15,7 +15,7 @@ module Hostfile
   end
 
   def self.open(*args, &block)
-    hosts = Hostfile.new(*args)
+    hosts = Hosts.new(*args)
     if block
       yield hosts
     else

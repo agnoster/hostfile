@@ -36,7 +36,7 @@ describe Hostfile do
       end
 
       it "should instantiate a new Hostfile" do
-        expect(hosts).to be_a Hostfile::Hostfile
+        expect(hosts).to be_a Hostfile::Hosts
       end
 
       it "should have the default path" do
@@ -54,7 +54,7 @@ describe Hostfile do
       end
 
       it "should instantiate a new Hostfile" do
-        expect(hosts).to be_a Hostfile::Hostfile
+        expect(hosts).to be_a Hostfile::Hosts
       end
 
       it "should have the given path" do
