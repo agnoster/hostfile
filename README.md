@@ -1,4 +1,4 @@
-# Hostfile
+# Hostfile [![build status](https://secure.travis-ci.org/agnoster/hostfile.png?branch=master)](http://travis-ci.org/agnoster/hostfile)
 
 > STATE: Unusable
 
