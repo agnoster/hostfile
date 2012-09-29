@@ -1,11 +1,9 @@
-require 'hostfile'
-
 module Hostfile
   class Hosts < Hash
     attr_accessor :path
 
-    def initialize(path=nil)
-      @path = path || Hostfile.system_path
+    def initialize(path)
+      @path = path
     end
 
     def ==(hosts)

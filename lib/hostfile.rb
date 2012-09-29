@@ -11,11 +11,12 @@ module Hostfile
   end
 
   def self.default(&block)
-    self.open(&block)
+    open(&block)
   end
 
-  def self.open(*args, &block)
-    hosts = Hosts.new(*args)
+  def self.open(path=nil, &block)
+    path ||= system_path
+    hosts = Hosts.new(path)
     if block
       yield hosts
     else
